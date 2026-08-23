@@ -38,10 +38,10 @@ appwrite-backend/                  Appwrite implementation
 
 ### Option A: Custom FastAPI backend
 
-From PowerShell in the repository root:
+Open PowerShell in the cloned repository root, then run:
 
 ```powershell
-cd C:\osdag-task4\custom-backend
+cd .\custom-backend
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
@@ -67,7 +67,7 @@ The API runs at `http://localhost:8000`. The database is created at `custom-back
 Keep the API terminal running and open a second PowerShell terminal:
 
 ```powershell
-cd C:\osdag-task4
+# Run this command from the cloned repository root.
 python -m http.server 5500
 ```
 
@@ -80,7 +80,7 @@ Do not open `index.html` directly with `file://`; serving it over HTTP is requir
 Run this from `custom-backend`, with the virtual environment active:
 
 ```powershell
-cd C:\osdag-task4\custom-backend
+cd .\custom-backend
 python verify_app.py
 ```
 
@@ -105,7 +105,7 @@ Each account has its own seeded files. The additional notes are:
 The seed operation is idempotent: it does not duplicate users or files that already exist. It can also be run explicitly:
 
 ```powershell
-cd C:\osdag-task4\custom-backend
+cd .\custom-backend
 python seed_demo.py
 ```
 
