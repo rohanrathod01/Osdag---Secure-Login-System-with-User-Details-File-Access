@@ -1,0 +1,9 @@
+custom-backend/.venv/
+custom-backend/data/*.db
+custom-backend/.env
+appwrite-backend/.env
+*.pyc
+__pycache__/
+/alice_notes.txt
+/bob_notes.txt
+/carol_notes.txt
